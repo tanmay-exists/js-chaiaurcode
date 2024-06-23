@@ -34,3 +34,23 @@ console.log(typeof myFunction)
 
 let somevalue = null
 console.log(typeof somevalue)
+
+
+
+// MEMORY - STACK(primitive), HEAP(non-primitive)
+let myYoutubename = "hiteshchoudharydotcom"
+let anotherName = myYoutubename  // this got a copy of value of myYoutubename
+console.log(anotherName)
+anotherName = "chaiaurcode"
+console.log(anotherName)
+console.log(myYoutubename)
+
+let userOne = {
+    email: "user@gooogle.com",
+    upi: "user@ylb"
+}
+
+let userTwo = userOne   // this will refer the address of userOne
+userTwo.email = "hitesh@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)
