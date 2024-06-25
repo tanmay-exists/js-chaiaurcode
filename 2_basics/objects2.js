@@ -38,4 +38,13 @@ console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
-console.log(tinderUser.hasOwnProperty('isLogged'))
+console.log(tinderUser.hasOwnProperty('isLogged '))
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor can also be written as below
+const{courseInstructor: instructor} = course    // destructuring
+console.log(instructor)
